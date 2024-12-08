@@ -7,7 +7,7 @@ let condition=document.getElementById("condition");
 let error=document.getElementById("error");
 async function getData(city){
     const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=b7a7e173bfce4fd990a172821240812&q=${city}&aqi=yes`
+        `https://api.weatherapi.com/v1/current.json?key=b7a7e173bfce4fd990a172821240812&q=${city}&aqi=yes`
     );
     const data = await response.json();
     if (data.error) {
